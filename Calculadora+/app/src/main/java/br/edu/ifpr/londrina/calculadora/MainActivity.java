@@ -1,6 +1,6 @@
 package br.edu.ifpr.londrina.calculadora;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -116,12 +116,12 @@ public class MainActivity extends AppCompatActivity {
 				case R.id.point:
 					res.setText(res.getText() + ".");
 					point.setText(((point.getText().equals("Ponto"))?("Vírgula"):("Ponto")));
-				break;
+					break;
 
 				default:
-				//	for (int c = 0; c<10; c++)
-				//		if (R.id.button11 + c == v.getId())
-				//			res.setText(res.getText() + Integer.toString(c));
+					//	for (int c = 0; c<10; c++)
+					//		if (R.id.button11 + c == v.getId())
+					//			res.setText(res.getText() + Integer.toString(c));
 					res.setText(res.getText() + Integer.toString(v.getId()-R.id.button11));
 			}
 
